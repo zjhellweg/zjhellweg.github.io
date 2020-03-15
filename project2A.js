@@ -115,7 +115,7 @@ function CreateHangman(Word,GuessedLetters) {
   let Checker = '';
   WordSoup.forEach(element => {
     // eval makes a string count as code for the porpouses of the if statement
-    if (GuessedLetters.indexOf(element.tolowercase) !== -1) {
+    if (GuessedLetters.indexOf(element.toLowerCase()) !== -1) {
       Display = Display+element+" ";
       Checker = Checker+element;
     }else{
